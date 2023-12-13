@@ -15,8 +15,6 @@
       institution: Vanderbilt University, Nashville, TN
       year: 
       description:
-        - title:
-          contents:
             
     - title: Bachelor of Science in Computer Science
       institution: University of South Carolina, Columbia, SC
@@ -28,67 +26,78 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Researcher
+      institution: Vanderbilt University, Nashville, TN
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Since August 2023, I have been working as a Graduate Research Assistant at Vanderbilt University, focusing
+          on research within the VeriVital and NDS Research Labs. My main area of study involves exploring formal
+          methods for the verification of neural networks. This work is essential in enhancing the safety and reliability of
+          AI systems, marking a significant contribution to the field of neural network validation and verification. My role
+          at Vanderbilt University demonstrates my commitment to cutting-edge research in artificial intelligence and the
+          development of more robust, trustworthy AI technologies.
+
+    - title: Undergraduate Researcher
+      institution: New York Institute of Technology, New York, NY
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        -  As a project manager and researcher, I contributed to the development of an open-source Natural Language
+          Processing (NLP) algorithm designed to detect comment toxicity based on text and emojis. My work involved
+          implementing a BiLSTM model that leveraged GloVe and Emoji2Vec embeddings, enhancing the algorithm's
+          ability to discern toxicity accurately. This project was showcased at the 2021 REU Research in Networking and
+          Systems Conference and gained further recognition with a publication in the 2021 IEEE 18th International
+          Conference on Mobile Ad Hoc and Smart Systems (MASS). My role in this project highlights my skills in NLP,
+          team leadership, and my commitment to advancing research in intelligent systems.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Undergraduate Researcher 
+      institution: University of South Carolina, Columbia, SC
+      year: 2020-2023
       description:
+        - As an undergraduate researcher in the South Carolina Autonomous Robotics Research (SCARR) lab, I
+          significantly contributed to two significant projects. My first project entailed developing an innovative multirobot visibility-based pursuit-evasion algorithm, where I optimized the program to reduce the pursuer robot's
+          path by up to 75%. This groundbreaking work was published at the prestigious 2021 IEEE International
+          Conference on Robotics and Automation (ICRA). The second project focused on creating an algorithm for
+          efficient information routing using ocean sensor nodes. Funded by the Magellan research grant, this research
+          emphasized the practical applications of autonomous systems and was presented at Discover UofSC 2023. My
+          role in these projects highlights my algorithm development and optimization skills and dedication to advancing
+          research in autonomous robotics.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Provost Graduate Scholarship 
 
-- title: Academic Interests
+- title: Interests and Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Interests
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Evaluating trade-offs between Fairness and Accuracy in Machine Learning
+        - Formal Methods for Fairness Verification
+        - Algorithmic Bias and Mitigation Strategies
+        - Ethical AI and Responsible AI Development
+    - title: Technical Skills
       items:
-        - Description 1.
-        - Description 2.
+        - Proficient in Programming Languages (e.g., Python, R, MATLAB)
+        - Data Analysis Tools (e.g., Pandas, NumPy, SciPy)
+        - Machine Learning Frameworks (e.g., TensorFlow, PyTorch)
+    - title: Research Skills
+      items:
+        - Formal Methods for Verification
+        - Statistical Analysis and Data Interpretation
+        - Experimental Design and Hypothesis Testing
+        - Literature Review and Academic Research
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Sailing, Reading, Playing the Clarinet.

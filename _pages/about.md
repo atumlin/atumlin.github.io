@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Ph.D. Student in Computer Science, Research Assistant, Russell G. Hamilton Scholar
 
-As a first-year Ph.D. student in Computer Science at Vanderbilt University, I am thrilled to have been awarded the prestigious Russell G. Hamilton Scholarship, which acknowledges exceptional students pursuing a Ph.D. My broad research interests are focused on tackling the complex issue of balancing fairness and robustness in machine learning models. Currently, I am a research assistant in both Vanderbilt's VeriVITAL and NDS Labs, where I am actively involved in researching formal methods for fairness verification.
+As a first-year Ph.D. student in Computer Science at Vanderbilt University, I am thrilled to have been awarded the prestigious Provost Graduate Scholarship, which acknowledges exceptional students pursuing a Ph.D. My broad research interests are focused on tackling the complex issue of balancing fairness and robustness in machine learning models. Currently, I am a research assistant in both Vanderbilt's VeriVITAL and NDS Labs, where I am actively involved in researching formal methods for fairness verification.
 
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
