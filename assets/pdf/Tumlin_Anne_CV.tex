@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template (Updated)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{url}
+\setlength{\parskip}{0.5\baselineskip}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Anne Tumlin}
+\address{\url{https://atumlin.github.io/}}
+\address{(423)-765-8736 \ anne.m.tumlin@vanderbilt.edu}
+\address{\textbf{(she/her/hers)}}
+
+
+
+\begin{document}
+\setstretch{0.95}
+
+%-------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Vanderbilt University, Nashville, TN} \hfill {\em Expected May 2028} \\
+Russell G. Hamilton Scholar \hfill {\em GPA: 3.763 } \\
+Department of Energy Computational Science Graduate Fellow \\
+Ph.D. Student in Computer Science
+
+{\bf University of South Carolina, Columbia, SC} \hfill {\em August 2019 - May 2023} \\
+Magna Cum Laude \hfill {\em GPA: 3.918 } \\
+South Carolina Honors College - McNair Scholar \\
+Bachelor of Science in Computer Science, Minor in Business Administration
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% RESEARCH AND TEACHING EXPERIENCE SECTION
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Research \& Teaching Experience}
+\begin{rSubsection}{Vanderbilt University Graduate Research Assistant}{\em August 2023 -- Present}{VeriVITAL and Network \& Data Science (NDS) Labs}{}
+\item Researching formal methods for the verification of neural networks, with a focus on safety, robustness, and fairness in safety-critical AI applications.
+\item Currently extending the \textit{Neural Network Verification (NNV)} tool to support Graph Neural Network (GNN) layers by developing custom layer support, formal specifications, and verification pipelines. Applying the framework to certify robustness of GNN-based power flow models using IEEE benchmark datasets, including reachability-based verification of GNNs with both node and edge features (accepted to SAIV 2026).
+\item Led the design and development of \textit{FairNNV}, a formal verification framework for certifying individual and counterfactual fairness in neural networks. Extended the \textit{Neural Network Verification (NNV)} tool to incorporate fairness specifications and verification methods; published in ICAIF 2024.
+\item Contributed to DARPA’s Assured Neuro Symbolic Learning and Reasoning (ANSR) program by debugging and running simulations of behavior tree models used in verifiable neuro-symbolic systems; published in FMAS 2024.
+\end{rSubsection}
+
+\begin{rSubsection}{Undergraduate Research and Teaching Experience}{\em 2020 -- 2023}{University of South Carolina and New York Institute of Technology}{}
+\item Optimized multi-robot pursuit-evasion algorithms in the SC Autonomous Robotics Lab; reduced path length by up to 75\% and published in IEEE ICRA 2021.
+\item Led a project on toxic comment detection for natural language processing at NYIT, implementing BiLSTM models with GloVe and Emoji2Vec embeddings; published in IEEE MASS 2021.
+\item Conducted independent research on ocean sensor node networks; received \$2,500 through the Magellan Scholar Program and presented a poster at Discover UofSC 2023.
+\item Served as a teaching assistant for a Linux/Unix course; designed lab assignments and supported undergraduate instruction.
+\end{rSubsection}
+
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Year-Round Intern — Verification \& Assurance}{\em January 2026 -- Present}{Sandia National Laboratories}{Albuquerque, NM}
+\item Extending my summer practicum through a continued, year-round collaboration bringing verification and assurance approaches to the FACETS project's cyber-physical anomaly detection and mitigation.
+\end{rSubsection}
+
+\begin{rSubsection}{Summer Practicum Researcher}{\em May 2025 -- August 2025}{Sandia National Laboratories}{Albuquerque, NM}
+\item Completed a DOE CSGF-funded summer research practicum at Sandia National Laboratories, focusing on secure and resilient power systems; received \$18,500 in support.
+\item Contributed to the Flexible, Autonomous, and Cyber-Physical Ecosystem for Trusted Security (FACETS) project, which aims to enable cyber-physical situational awareness for secure grid operations.
+\item Engineered physics-based and statistical features—including the 16 Signature Elements method and Ohm’s Law-based metrics—to enhance anomaly detection in power systems.
+\item Integrated features into LSTM autoencoder models and carried out model evaluations to assess detection accuracy and reduce false positives across PMUs.
+\item Developed a Python-based pipeline compatible with FACETS and GriDNA scripts to integrate newly engineered features; documented functionality and findings to support ongoing lab development.
+\item Collaborated with electrical engineers, cybersecurity experts, and ML researchers to bridge domain knowledge between physical grid modeling and machine learning-based detection techniques.
+\end{rSubsection}
+
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+\begin{enumerate}
+    \item Tumlin, A. M., Wooding, B., Shao, Z., Manzanas Lopez, D., Derr, T., Johnson, T. T. (2026). Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features. \textit{Symposium on AI Verification (SAIV 2026)}. To appear.
+    \item Tumlin, A. M., Manzanas Lopez, D., Robinette, P., Zhao, Y., Derr, T., Johnson, T. T. (2024). FairNNV: The Neural Network Verification Tool for Certifying Fairness. \textit{Proceedings of the 5th ACM International Conference on AI in Finance (ICAIF '24)}, 36--44. \url{https://doi.org/10.1145/3677052.3698677}
+    \item Serbinowska, S. S., Potteiger, N., Tumlin, A. M., Johnson, T. T. (2024). Verification of Behavior Trees with Contingency Monitors. \textit{Formal Methods for Autonomous Systems (FMAS 2024), Electronic Proceedings in Theoretical Computer Science}, 411, 56--72. \url{https://doi.org/10.4204/EPTCS.411.4}
+    \item Aquino, M., Ortiz, Y., Rashid, A., Tumlin, A. M., Artan, N. S., Dong, Z., Gu, H. (2021). Toxic Comment Detection: Analyzing the Combination of Text and Emojis. \textit{2021 IEEE MASS}.
+    \item Olsen, T., Tumlin, A. M., Stiffler, N. M., O'Kane, J. M. (2021). A Visibility Roadmap Sampling Approach for a Multi-Robot Visibility-Based Pursuit-Evasion Problem. \textit{2021 IEEE ICRA}.
+\end{enumerate}
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% SPEAKING EXPERIENCE
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Invited Talks and Conference Presentations}
+\begin{itemize}
+  \item \textbf{Formal Verification of Neural Networks and Graph Neural Networks} — Guest Lecturer, Formal Methods Course, Vanderbilt University, April 2026
+  \item \textbf{Fairness in Machine Learning and Fairness Verification} — Guest Lecturer, Data Science Rights and Responsibilities Course, February 2026
+  \item \textbf{GNN Verification for Power Systems} — Guest Speaker, Los Alamos National Laboratory, July 2025
+  \item \textbf{Toward Graph Neural Network Verification} — Poster Presentation, DOE Computational Science Graduate Fellowship Annual Program Review '25, July 2025
+  \item \textbf{GNN Verification for Power Systems} — Poster Presentation, Software for National Security Partnership Forum (SPF) '25, March 2025
+  \item \textbf{Fairness in Machine Learning} — Guest Lecturer, Data Science Rights and Responsibilities Course, February 2025
+  \item \textbf{FairNNV: Formal Fairness Verification of Neural Networks} — Oral Presentation, ACM ICAIF ’24, November 2024
+  \item \textbf{Fairness in Machine Learning} — Guest Lecturer, Vanderbilt AI Training Series, October 2024
+\end{itemize}
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% GRADUATE COURSEWORK
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Graduate Coursework}
+\begin{multicols}{2}
+\begin{itemize}
+\item Social Network Analysis
+\item Algorithms for Decision Making
+\item Hybrid and Embedded Systems
+\item Automated Verification
+\item Advanced Artificial Intelligence
+\item Distributed Electrical Energy Systems
+\item Mathematical Data Science
+\item Statistical Foundations of Deep Learning
+\item Big Data Scaling
+\item Systems Theory
+\end{itemize}
+\end{multicols}
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------------
+% GRADUATE PROJECTS
+%-------------------------------------------------------------------------------------
+\begin{rSection}{Graduate Course Projects}
+\begin{itemize}
+    \item \textbf{A Large Scale Data-Driven Approach to Estimating Power Generation Costs in AC-OPF Problems} (Spring 2025): \url{https://github.com/atumlin/DS5460_FinalProject}
+    \item \textbf{Verifying the Robustness of FDIA Detection Models in Smart Grid Systems} (Spring 2024): \url{https://github.com/judydnguyen/nnv}
+    \item \textbf{Comparative Analysis of RL and Linear Control Methods for the Inverted Pendulum Problem} (Fall 2023): \url{https://github.com/atumlin/CS6376_TermProject}
+\end{itemize}
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% LEADERSHIP AND TEAMWORK
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Leadership and Teamwork}
+
+{\bf VALIANT Attempt (Officer)} \hfill {\em April 2025 - Present} \\
+Nominated officer of the student organization for Vanderbilt Lab for Immersive AI Translation, contributing to student-led efforts that support immersive AI translation research and engagement.
+
+{\bf Computer Science Graduate Student Association (Vice President)} \hfill {\em August 2023 - Present} \\
+Elected Vice President; co-founder and executive board member, supporting professional development and academic community building among graduate students.
+
+{\bf UofSC Senior Capstone Project (Project Manager)} \hfill {\em August 2022 - May 2023} \\
+Led the development of Cocky Calendar, a web app for campus events. Managed the database system and implemented a web scraping tool for event aggregation.
+
+{\bf UofSC Chapter of Women in Computing (President)} \hfill {\em August 2020 - December 2021} \\
+Promoted inclusion and leadership in tech through organized meetings, events, and outreach. Increased visibility and engagement within the CS department.
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------------
+% AWARDS
+%-------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards}
+
+\textbf{Department of Energy Computational Science Graduate Fellowship (DOE CSGF)} \hfill \emph{2024} \\
+Highly competitive fellowship awarded by the U.S. Department of Energy to support graduate students pursuing research in computational science and engineering. Provides full tuition and a stipend of \$45,000 annually to advance work in areas of national importance.
+
+\textbf{Provost Graduate Scholarship} \hfill \emph{2023} \\
+Merit-based scholarship awarded by Vanderbilt University to outstanding Ph.D. students. Provides an annual supplement of \$10,000 to support academic development and research.
+
+\textbf{Benjamin A. Gilman International Scholarship} \hfill \emph{2022} \\
+Nationally competitive \$5,000 scholarship funded by the U.S. Department of State to support undergraduate study abroad and promote cross-cultural learning among underrepresented students.
+
+\textbf{NYIT Research Experience for Undergraduates (REU)} \hfill \emph{2021} \\
+Selected for a competitive NSF-funded summer research program at the New York Institute of Technology.
+
+\textbf{Magellan Scholar Research Grant} \hfill \emph{2021} \\
+\$2,500 undergraduate research grant awarded by the University of South Carolina to support student-led research projects under faculty mentorship.
+
+\textbf{UofSC Research Experience for Undergraduates (REU)} \hfill \emph{2020} \\
+Selected for a competitive NSF-funded summer research program at the University of South Carolina.
+
+\textbf{McNair Scholarship} \hfill \emph{2019} \\
+Full-ride merit scholarship awarded to top undergraduate students at the University of South Carolina. Covered tuition, fees, and living expenses totaling approximately \$194,000 over four years.
+
+\end{rSection}
+
+
+
+\end{document}
