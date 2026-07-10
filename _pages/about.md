@@ -25,7 +25,7 @@ I’m a Ph.D. student in Computer Science at Vanderbilt University, where I work
 
 My work explores formal verification techniques for graph neural networks (GNNs) in power systems, particularly for tasks like power flow prediction and false data injection attack detection. I’m also passionate about algorithmic fairness in machine learning and have developed tools for certifying fairness properties in neural networks.
 
-I’m a graduate research assistant in both Vanderbilt’s VeriVITAL Lab and Network and Data Science Lab, and currently completing my practicum at Sandia National Laboratories, contributing to secure systems for cyber-physical situational awareness.
+I’m a graduate research assistant in both Vanderbilt’s VeriVITAL Lab and Network and Data Science Lab. Through a summer practicum and an ongoing year-round internship with Sandia National Laboratories, I contribute to the FACETS project, bringing verification and assurance approaches to secure systems for cyber-physical situational awareness.
 
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

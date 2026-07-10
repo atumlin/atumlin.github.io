@@ -1,81 +1,28 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Fairness Verification of Neural Networks
+description: FairNNV — certifying individual and counterfactual fairness of neural networks with reachability analysis, quantified by a Verified Fairness score and evaluated across bias-mitigation techniques.
+img:
+importance: 2
+category: research
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+As machine learning models are increasingly used in socially critical financial decisions — credit scoring, loan approval, fraud detection — providing *formal* guarantees of fairness matters as much as guaranteeing accuracy. **FairNNV** brings fairness into formal verification: it certifies fairness properties of neural networks using reachability analysis, built on the [Neural Network Verification (NNV)](https://github.com/verivital/nnv) framework. This work was published at **ICAIF '24** {% cite 10.1145/3677052.3698677 %}, where I led the design and development of the tool and gave the oral presentation.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### The approach
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+FairNNV extends NNV's reachability machinery to reason about two fairness notions directly:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Individual fairness** — similar individuals should receive similar outcomes.
+- **Counterfactual fairness** — an individual's prediction should be unchanged when a protected attribute is counterfactually altered.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+Rather than estimating fairness empirically from a test set, FairNNV constructs the reachable output set over the relevant input variations and checks the fairness property against it, yielding a formal certificate. To make the result interpretable and comparable across models, it introduces the **Verified Fairness (VF) score**, a quantitative measure of certified fairness.
 
+### Bias mitigation, put to the test
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+A central question in the paper is whether popular bias-mitigation methods actually deliver the fairness they appear to. FairNNV compares models **before and after adversarial debiasing** and measures both the empirical fairness improvement and the verified fairness score. Across benchmark datasets — **Adult Census, German Credit, and Bank Marketing**, with a focused analysis on Adult Census classifiers — the results reveal a gap: empirical fairness gains from adversarial debiasing do not always align with formally verified fairness. This argues for integrating formal verification into the model-evaluation pipeline to guide model selection, rather than relying on empirical fairness metrics alone.
 
+### Continuing work
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+FairNNV grounds my ongoing contributions of fairness specifications to the NNV tool, and the fairness-verification perspective it introduces is the basis for guest lectures I've given on fairness in machine learning at Vanderbilt.
